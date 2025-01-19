@@ -11,18 +11,82 @@
 <body>
 
     <header>
-        MSC2006 Instructor Course Log
+        MSC2006 Instructor Course Page
     </header>
 
+    <nav>
+        <!-- Notice that <a> tag is outside of the button, this is because we want the whole button to be a link, but just the text inside. If we made the text a link, we'd have to select only it, and the formatting would look like a hyperlink -->
+        <a href="../index.html"><button class="nav-button" type="button">Home</button></a>
+        <a href="#"><button class="nav-button-selected" type="button">Course Log</button></a>
+        <a href="../pages/WebsiteExamples.html"><button class="nav-button" type="button">Examples</button></a>
+        <a href="https://q.utoronto.ca/courses/372926" target="_blank" rel="noopener noreferrer"><button class="nav-button" type="button">Quercus</button></a>
+        <a href="https://www.youtube.com/playlist?list=PLqr7WdVegM3kuqMZV1cre7eRlHCbxasnA" target="_blank" rel="noopener noreferrer"><button class="nav-button" type="button">Lectures</button></a>
+        <a href="https://www.youtube.com/playlist?list=PLqr7WdVegM3mhzMBTgJZJPgeX61n4Gqnl" target="_blank" rel="noopener noreferrer"><button class="nav-button" type="button">Tutorials</button></a>
+    </nav>
+
     <main>
-        <div class="paragraphs">
-            <p class="paragraphs-text">Content incoming!</p>
+
+        <div class="copy-container">
+            <div class="copy">
+                <p>The folllowing drop down accordians provide breif explanations for the topics and content covered in class each week. For a full review of content covered, including recodings, slides, and tasks to complete next week, please refer to Quercus.</p>
+            </div>
         </div>
+
+        <div class="accordian-container">
+            <!--Week 1-->
+        <button class="accordian"><strong>Week 1:</strong> Course introduction and web dev 101</button>
+		<div class="panel">
+			<p>In class today I introduced myself to the students and gave them a primer on what we'll cover in MSC2006. Following intros and hellos, we dove into an explanation of web development, or web dev, at a basic level. Specficially, we covered:</p>
+			<ul>
+				<li>The basics of HTML, inclduing it's syntax and how to get a simple version of this nifty little site up and running</li>
+				<li>Coverd the difference between server and client machines, as well as a robust web dev "lexicon" of useful terms</li>
+				<li>Began a conversation regarding what interactive technologies are needed for our MRPs, and around how important it is to get started learning them</li>
+			</ul>
+		</div>
+
+        <!--Week 2-->
+        <button class="accordian"><strong>Week 2:</strong> Web dev 202 and intro to accessible design</button>
+        <div class="panel">
+			<p>Today's lecture built upon the foundation we set in web dev 101. We dove deeper into CSS syntax and stlying, and explored creating subpages within a website folder structure. After a tutorial on using Figma designs for CSS code, we covered a recap of accessible design to bolster what students learned in the fall. Specifically, we covered:</p>
+			<ul>
+				<li>The basics of CSS, inclduing it's syntax and how to do basic stlying manually</li>
+				<li>How to turn a wireframe into a Figma prototype that can inform your CSS coding</li>
+				<li>The main characteristics of accessible design (i.e., POUR) and some small scale case studies (inlcuding our own websites!)</li>
+			</ul>
+		</div>
+
+        <!--Week 3-->
+        <button class="accordian"><strong>Week 3:</strong> Previsualization for linear media</button>
+        <div class="panel">
+			<p>TBD!</p>
+		</div>
+
+        </div>
+
     </main>
 
     <footer>
         &copy; 2025 Alex Young
     </footer>
+
+	<script language="javascript">
+		
+		var acc = document.getElementsByClassName("accordian");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+					} else {
+					panel.style.display = "block";
+					}
+					});
+			}
+		
+	</script>
 
 </body>
 

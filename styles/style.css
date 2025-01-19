@@ -4,10 +4,6 @@
     text-decoration: none;
 }
 
-em{
-    display: inline;
-}
-
 
 body{
     display: flex;
@@ -16,6 +12,13 @@ body{
     height: 1024px; */
     flex-direction: column;
     align-items: flex-start;
+    /* Specifies the font type for the whole website, unless overridden */
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }
 
 header{
@@ -33,10 +36,148 @@ header{
     color: #1E1E1E;
     text-align: center;
     font-family: Roboto, Helvetica, sans-serif;
-    font-size: 64px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+nav{    
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 32px;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+/* the style below is used for the navigation buttons at the top of my website */ 
+.nav-button{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #000;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* the transition declaration makes it seem lik buttons fade into one another */
+    transition: 0.5s;
+}
+
+/* the two styles below act in concert with the .nav-button style, they are related to it and will determine how the button changes styles based on user interaction */ 
+
+.nav-button:hover{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #000;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* the transition declaration makes it seem lik buttons fade into one another */
+    transition: 0.5s;
+}
+
+.nav-button:active{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #000;
+    background: #5DBA8C;
+    color: #000;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* the transition declaration makes it seem lik buttons fade into one another */
+    transition: 0.5s;
+}
+
+/* This style is for buttons when we are on the selected page already. Ideally we want them to be part of the site nav structure still, and seem responsive */ 
+
+.nav-button-selected{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #5DBA8C;
+    background: #5DBA8C;
+    color: #000;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* the transition declaration makes it seem lik buttons fade into one another */
+    transition: 0.5s;
+}
+
+.nav-button-selected:hover{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #000;
+    background: #5DBA8C;
+    color: #000;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* the transition declaration makes it seem lik buttons fade into one another */
+    transition: 0.5s;
+}
+
+.nav-button-selected:active{
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 3px solid #000;
+    background: #5DBA8C;
+    color: #000;
+    text-align: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    /* the transition declaration makes it seem lik buttons fade into one another */
+    transition: 0.5s;
 }
 
 main{
@@ -71,8 +212,8 @@ footer{
     line-height: normal;
 }
 
-/* I've added this style to format a div container above my tiles images, and general written content on the site */
-.paragraphs{
+/* I've added this style to format a div container that will hold any copy I want, and keep it centered on the site */
+.copy-container{
     display: flex;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -82,24 +223,24 @@ footer{
     align-items: center;
     align-self: stretch;
     flex-wrap: wrap;
+    position: relative;
 }
 
-/* I've added this style to format the text in a div container above my tiles images, and general written content on the site */
-.paragraphs-text{
-    display: flex;
-    max-width: 1296px;
-    flex-direction: column;
-    justify-content: center;
-    flex: 1 0 0;
-    align-self: stretch;
-    color: #000;
+/* I've added this style to format a div container that will hold blocks of specific copy, keeping it left-aligned and stopping it from getting to wide to increase readability */
+.copy{
+    display: block;
+    max-width: 1280px;
+}
+
+p{
+    /* Margins essentially act like paragraph spacing in this instance */
+    margin-bottom: 12px;
+    /* This sets the font for all <p>, unless otherwsie specified */
     font-family: Roboto, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    /* Display was added to avoid tags like <em> or <strong> from causing line breaks */
-    display: inline;
 }
 
 .row{
@@ -156,4 +297,77 @@ footer{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.accordian-container{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.accordian{
+    background-color: #E6E6E6;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 1280px;
+    text-align: left;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.active, .accordian:hover{
+    background-color: #A4A4A4;
+}
+
+.panel{
+    padding: 15px 30px;
+    border: 1px solid lightgray;
+    width: 100%;
+    max-width: 1219px;
+    display: none;
+    overflow: hidden;
+}
+
+ul{
+    padding-inline-start: 40px;
+}
+
+h3{
+    margin-bottom: 12px;
+}
+
+.column-container{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.column-list{
+    display:inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    width: 306px;
 }

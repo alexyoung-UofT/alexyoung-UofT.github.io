@@ -11,12 +11,53 @@
 <body>
 
     <header>
-        MSC2006 Student Website Examples
+        MSC2006 Instructor Course Page
     </header>
 
+    <nav>
+        <!-- Notice that <a> tag is outside of the button, this is because we want the whole button to be a link, but just the text inside. If we made the text a link, we'd have to select only it, and the formatting would look like a hyperlink -->
+        <a href="../index.html"><button class="nav-button" type="button">Home</button></a>
+        <a href="../pages/CourseLog.html"><button class="nav-button" type="button">Course Log</button></a>
+        <a href="#"><button class="nav-button-selected" type="button">Examples</button></a>
+        <a href="https://q.utoronto.ca/courses/372926" target="_blank" rel="noopener noreferrer"><button class="nav-button" type="button">Quercus</button></a>
+        <a href="https://www.youtube.com/playlist?list=PLqr7WdVegM3kuqMZV1cre7eRlHCbxasnA" target="_blank" rel="noopener noreferrer"><button class="nav-button" type="button">Lectures</button></a>
+        <a href="https://www.youtube.com/playlist?list=PLqr7WdVegM3mhzMBTgJZJPgeX61n4Gqnl" target="_blank" rel="noopener noreferrer"><button class="nav-button" type="button">Tutorials</button></a>
+    </nav>
+
     <main>
-        <div class="paragraphs">
-            <p class="paragraphs-text">Content incoming!</p>
+        <div class="copy-container">
+            <div class="copy">
+                <p>The lists provided here offer access and links to examples of sites you can use for inspiration. This includes student sites from previous years, as well as tools you can use to more easily style your CSS. I've also provided an easy link to my GitHub repository, where you can view and download my html and CSS files for this site to use and adapt as you'd like.</p>
+                <p>Please note, while these are meant to help provide inspiration, <strong>they aren't meant to be copied without building upon or alterning the code in some way</strong>. Take these examples and make them your own!</p>
+            </div>
+        </div>
+        <div class="column-container">
+            
+            <div class="column-list">
+                <h3>Student Examples</h3>
+                <ul>
+                    <li><a href="https://youngatheart14.github.io/index.html" target="_blank" rel="noopener noreferrer">Alex Young, 1T9</a></li>
+                    <li><a href="https://bmc1.utm.utoronto.ca/~roxanne/MSC2006/index.html" target="_blank" rel="noopener noreferrer">Roxanne Ziman, 2T0</a></li>
+                    <li><a href="https://bmc1.utm.utoronto.ca/~caitlinc/MSC2006H/index.html" target="_blank" rel="noopener noreferrer">Caitlin Chang, 2T0</a></li>
+                    <li><a href="https://bmc1.utm.utoronto.ca/~miranda/MSC2006H/index.html" target="_blank" rel="noopener noreferrer">Miranda MacAskill, 2T0</a></li>
+                </ul>
+            </div>
+
+            <div class="column-list">
+                <h3>Web Dev Tools</h3>
+                <ul>
+                    <li><a href="http://getskeleton.com/" target="_blank" rel="noopener noreferrer">Skeleton, boilerplate CSS</a></li>
+                    <li><a href="https://nicolasgallagher.com/about-normalize-css/" target="_blank" rel="noopener noreferrer">Normalize.css, boilerplate CSS</a></li>
+                </ul>
+            </div>
+
+            <div class="column-list">
+                <h3>Instructor GitHub Repo</h3>
+                <ul>
+                    <li><a href="https://github.com/alexyoung-UofT/alexyoung-UofT.github.io/tree/main" target="_blank" rel="noopener noreferrer">alexyoung-UofT (click into folder to view files)</a></li>
+                </ul>
+            </div>
+
         </div>
     </main>
 
