@@ -3,34 +3,46 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MSC2006 Instructor Course Website 2025</title>
+    <title>Homepage | MSC2006 Instructor Course Website 2025</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
     <header>
-        Course Title
+        MSC2006 Instructor Course Page
     </header>
 
     <main>
+        <div class="paragraphs">
+            <p class="paragraphs-text">Welcome to the personal instructor course page for MSC2006! This site serves as an example of what your individual course webpages <em>look</em> like.</p>
+            <!-- I've useed the <em> tag above instead or <i> because <em> is a semantic tag that denotes emphasis, whereas <i> is non-semantic. Visually, the will look the same-->
+        </div>
+        <div class="paragraphs">
+            <p class="paragraphs-text">Explore the links below to read short descriptions of what we've covered each week in class, see a list of previous course websites from other BMC students, or return to the Quercus homepage for MSC2006.</p>
+        </div>
+        <div class="paragraphs">
+            <p class="paragraphs-text">Don't forgot to use your in-broswer developer tools (i.e., F12 on your keyboard or the inspect command) as your explore this site and others to peek at the code to see what you can take and adapt for yourself.</p>
+</p>
+        </div>
         <div class="row">
             <a href="pages/CourseLog.html" class="subpage">
                 <img src="images/Louie_1_square.png" class="subpage-image">
                 <div class="label-container">
-                    <div class="subpage-title">Title</div>
+                    <div class="subpage-title">Instructor course log</div>
                 </div>
             </a>
-            <a href="#" class="subpage">
+            <a href="pages/WebsiteExamples.html" class="subpage">
                 <img src="images/Louie_2_square.png" class="subpage-image">
                 <div class="label-container">
-                    <div class="subpage-title">Title</div>
+                    <div class="subpage-title">Student website examples</div>
                 </div>
             </a>
-            <a href="#" class="subpage">
+            <a href="https://q.utoronto.ca/courses/372926" class="subpage" target="_blank" rel="noopener noreferrer">
+                <!-- the target attribute specifies if a page should open in a new tab (_blank) or window. I've added in a rel for web security reasons, as leaving just "_blank" can expose a site to a type of phishing called tabnapping -->
                 <img src="images/Louie_3_square.png" class="subpage-image">
                 <div class="label-container">
-                    <div class="subpage-title">Title</div>
+                    <div class="subpage-title">Quercus course page</div>
                 </div>
             </a>
         </div>
