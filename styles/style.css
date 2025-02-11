@@ -371,3 +371,28 @@ h3{
     position: relative;
     width: 306px;
 }
+
+/* I've added this style to format a div container that will hold images I want, and keep it centered on the site */
+.img-container{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Pop-up div container style for labels that appear on hover for images
+.popup{
+    position: absolute;
+    background-color: white;
+    border: 1px;
+    border-color: #000;
+    border-radius: 5px;
+    padding: 10px;
+    display:none;
+}  */
