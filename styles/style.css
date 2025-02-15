@@ -385,14 +385,3 @@ h3{
     flex-wrap: wrap;
     position: relative;
 }
-
-/* Pop-up div container style for labels that appear on hover for images
-.popup{
-    position: absolute;
-    background-color: white;
-    border: 1px;
-    border-color: #000;
-    border-radius: 5px;
-    padding: 10px;
-    display:none;
-}  */
