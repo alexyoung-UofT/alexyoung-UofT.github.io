@@ -38,7 +38,7 @@
         <div class="copy-container">
             <div class="copy">
                 <h2>Sketchfab Example</h2>
-                <p>The model of the Limbic System below is from a resource made publically available on Sketchfab, via the user <a href="https://michaelcorrin.com/utils/bmc3dviewer/">shojig</a>. The CSS has been slightly edited to allow for a responsive viewport that maintains a 16:9 aspect ratio with a max-wdith of 1280px.</p>
+                <p>The model of the Limbic System below is from a resource made publically available on Sketchfab, via the user <a href="https://michaelcorrin.com/utils/bmc3dviewer/">shojig</a>. The CSS has been slightly edited to allow for a responsive viewport that maintains a max-wdith of 1280px and height of 600px.</p>
             </div>
         </div>
 
@@ -56,23 +56,30 @@
         <div class="copy-container">
             <div class="copy">
                 <h2>BMC Model Viewer Component</h2>
-                <p>The model of the Limbic System below was downloaded from the user <a href="https://michaelcorrin.com/utils/bmc3dviewer/">shojig</a> via Sketchfab. It was then embdedded using the instructions on the <a href="https://michaelcorrin.com/utils/bmc3dviewer/">BMC Model Viewer Component</a> page. The CSS has been slightly edited to allow for a responsive viewport that maintains a 16:9 aspect ratio with a max-wdith of 1280px.</p>
+                <p>The model of the Limbic System below was downloaded from the user <a href="https://michaelcorrin.com/utils/bmc3dviewer/">shojig</a> via Sketchfab. It was then embdedded using the instructions on the <a href="https://michaelcorrin.com/utils/bmc3dviewer/">BMC Model Viewer Component</a> page. The CSS has been slightly edited to allow for a responsive viewport that maintains a height of 600px.</p>
             </div>
         </div>
+
+        <div class="img-container">
 
             <div id="GLB_3Dviewer" class='bmc_3dviewer'
                 data-src='[{"path":"https://alexyoung-uoft.github.io/3Dimages/LimbicSystem_GLBexample.glb", "name":"LimbicSystem_GLBexample"}]'
 
+                data-debug='true' 
                 data-load-button-overlay="insideCenter"
+                data-reset-view-btn='true' 
+ 
                 data-autoload='true' 
                 data-min-zoom='0.5'
-                data-max-zoom='2.0'
-                data-background-colour='0x000000' 
-                data-ortho-cam-size='1.0'
+                data-max-zoom='4.0'
+                data-background-colour='0xecbe7e' 
+                data-ortho-cam-size='4.0'
                 data-key-light-intensity='9.0'
                 data-fill-light-intensity='3.0'
-                data-initial-orientation='{"x":0, "y":0, "z":-10}'>
+                data-initial-orientation='{"x":15.0, "y":2.5, "z":10.0}'>
             </div>
+
+        </div>
         
     </main>
 
