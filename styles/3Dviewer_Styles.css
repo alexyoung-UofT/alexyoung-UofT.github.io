@@ -1,0 +1,43 @@
+/* I've added this style to format a div container that will hold any copy I want, and keep it centered on the site */
+.copy-container{
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 64px;
+    padding-right: 64px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* This was class was built into the Sketchfab embed code, but I added it to my CSS so I could further style it*/
+.sketchfab-embed-wrapper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1280px;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* 
+This is a class I added in order to also control the iframe, which stands for inline fram
+Inline frames are HTML elements that allow you to embed one HTML document inside another HTML document on a website. 
+*/
+.responsive-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Note that this is an ID, not a class, and it's soemthing I added to further control the BMC 3D model viewer */
+#GLB_3Dviewer{
+    width: 100%;
+    max-width: 1280px;
+    height: 500px;
+}
